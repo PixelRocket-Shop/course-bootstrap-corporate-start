@@ -1,0 +1,13 @@
+{{#if (config blogs)}}
+        <h4>Our latest articles</h4>
+            {{#each blogs.entries}}
+                <!-- Blog Post-->
+                <picture>
+                    <img src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                </picture>
+                <p>{{ title }}</p>
+                <a href="#">Read more &rarr;</a>
+                <!-- / Blog Post-->
+            {{/each}}
+        <a href="#">More articles &rarr;</a>
+{{/if}}

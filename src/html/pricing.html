@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> navbar/navbar
+        configClassList=config.classes.navbar
+        classList="" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <main class="{{ config.classes.content }}">
+
+        <!-- Page Title-->
+        {{>svg/svg-shape-eight
+            colorOne="text-success"
+            colorTwo="text-success"
+        }}
+        {{>svg/svg-shape-three
+            colorOne="text-success"
+            colorTwo="text-success"
+        }}
+        <h1>Simple pricing</h1>
+        <p>Try Sigma for free for 30 days with full features, no credit card required, no commitment required. Then upgrade your account after that when you're ready.</p>
+        <a href="#">Start your trial</a>
+        <!-- / Page Title-->
+
+        <!-- Page Content Goes Here -->
+
+            <!-- Pricing Table-->
+            Here goes pricing table
+            <!-- / Pricing Table-->
+
+            <!-- Enterprise Banner-->
+            <h4>Need Enterprise?</h4>
+            <p>Our Enterprise package is custom-built per client - ideal for large businesses.</p>
+            <a href="#" role="button">Discuss your requirements</a>
+            <ul>
+                <li>
+                    <i class="ri-checkbox-circle-fill"></i> 
+                    Custom package per client
+                </li>
+                <li>
+                    <i class="ri-checkbox-circle-fill"></i> 
+                    Unlimited resources
+                </li>
+                <li>
+                    <i class="ri-checkbox-circle-fill"></i> 
+                    Add additional features
+                </li>
+            </ul>
+            <!-- SVG Shape-->
+            {{>svg/svg-shape-one
+                colorOne="text-white"
+                colorTwo="text-white"
+            }}
+            <!-- / SVG Shape-->
+
+            <!-- / Enterprise Banner-->
+
+            <!-- Company Logos-->
+            {{#if (config logos-two)}}
+                    <p>Already trusted by thousands of brands</p>
+
+                        {{#each logos-two.entries}}
+                        <!-- Logo-->
+                        <picture>
+                            <img src="{{ img }}" alt="{{config.defaultImgAlt}}">
+                        </picture>
+                        <!-- / Logo-->
+                        {{/each}}
+
+            <!-- / Company Logos-->
+            {{/if}}
+
+
+        <!-- FAQs-->
+                <h3>Frequently asked questions</h3>
+        <!-- / FAQs-->
+
+        <!-- /Page Content -->
+    </main>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer)
+            configClassList=config.classes.footer
+            classList=""
+        }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

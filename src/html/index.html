@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> navbar/navbar
+        configClassList=config.classes.navbar
+        classList="" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <main class="{{ config.classes.content }}">
+        <!-- Page Content Goes Here -->
+
+        <!-- Hero-->
+        {{> widgets/hero }}
+        <!-- /Hero-->
+
+        <!-- Logo Showcase-->
+        <p>Trusted by thousands of companies worldwide</p>
+        {{> marquee/marquee-logos }}
+        <!-- Logo Showcase-->
+
+        <!-- Integrations-->
+        {{> widgets/integrations }}
+        <!-- / Integrations-->
+
+        <!-- Product Highlights-->
+        {{> widgets/highlights }}
+        <!-- /Product Highlights-->
+
+        <!-- Customer Reviews-->
+        {{> widgets/reviews }}
+        <!-- /Customer Reviews-->
+
+        <!-- Latest Blog Posts-->
+        {{> widgets/blog }}
+        <!-- / Latest Blog Posts-->
+
+        <!-- Product Features summary-->
+        {{> widgets/features }}
+        <!-- Product Features summary-->
+
+        <!-- About Us-->
+        {{> widgets/about }}
+        <!-- / About Us-->
+
+        <!-- /Page Content -->
+    </main>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer)
+            configClassList=config.classes.footer
+            classList=""
+        }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>
+

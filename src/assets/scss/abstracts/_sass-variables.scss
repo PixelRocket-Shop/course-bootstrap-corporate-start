@@ -1,0 +1,117 @@
+// Color system
+
+$white: #fff;
+$gray-50: #F8FAFC;
+$gray-100: #F1F5F9;
+$gray-200: #E2E8F0;
+$gray-300: #CBD5E1;
+$gray-400: #94A3B8;
+$gray-500: #64748B;
+$gray-600: #475569;
+$gray-700: #334155;
+$gray-800: #1E293B;
+$gray-900: #0F172A;
+$black: #000;
+
+$blue:    #2c4bff;
+$indigo:  #6610f2;
+$purple:  #6f46ff;
+$pink:    #ffa69e;
+$red:     #db1a2a;
+$orange:  #ff6c60;
+$yellow:  #ffed03;
+$green:   #5debdf;
+$teal:    #08c5d5;
+
+$secondary:     $gray-600;
+
+$body-bg:      $white;
+$body-color:   $gray-900;
+$border-color: $gray-200;
+$text-muted:   $gray-500;
+
+$font-size-base:   1.10rem;
+$line-height-base: 1.65;
+$enable-negative-margins: true;
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+$position-values: (
+  0: 0,
+  25: 25%,
+  n25: -25%,
+  50: 50%,
+  n50: -50%,
+  75: 75%,
+  n75: -75%,
+  100: 100%
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: ($spacer * 3.5),
+  7: ($spacer * 4),
+  8: ($spacer * 5),
+  9: ($spacer * 6),
+  10: ($spacer * 7)
+);
+
+
+$letter-spacing: (
+  "tighter": -0.05em,
+  "tight": -0.025em,
+  "wide": 0.065em,
+  "wider": 0.25em,
+  "widest": 0.4em
+);
+
+
+$fixed-widths: (
+    1: .25rem,
+    2: .5rem,
+    3: .75rem,
+    4: 1rem,
+    5: 1.25rem,
+    6: 1.5rem,
+    7: 1.75rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    12: 3rem,
+    14: 3.5rem,
+    16: 4rem,
+    20: 5rem,
+    24: 6rem,
+    28: 7rem,
+    30: 7.25rem,
+    32: 8rem,
+    36: 9rem,
+    40: 10rem,
+    44: 11rem,
+    48: 12rem,
+    52: 15rem,
+    56: 18rem,
+    60: 21rem,
+    64: 24rem,
+    68: 27rem,
+    72: 30rem,
+    76: 33rem,
+    80: 36rem,
+    84: 40rem,
+    88: 44rem,
+    92: 50rem,
+    96: 56rem,
+    100: 60rem
+);

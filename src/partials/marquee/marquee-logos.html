@@ -1,0 +1,9 @@
+{{# if (config logos)}}
+
+    {{#each logos.entries}}
+        <picture>
+            <img src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+        </picture>
+    {{/each}}
+
+{{/if}}

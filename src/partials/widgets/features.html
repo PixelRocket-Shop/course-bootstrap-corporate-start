@@ -1,0 +1,28 @@
+{{#if (config features)}}
+        <h4>Explore our features</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        {{#each features.entries}}
+        <!-- Feature-->
+        {{{ svg }}}
+        <p>{{ title }}</p>
+        <span>{{ description }}</span>
+        <!-- / Feature-->
+        {{/each}}
+
+        <a href="#">Start your trial</a>
+        <ul>
+            <li>
+                <i class="ri-checkbox-circle-fill"></i> 
+                No credit card required
+            </li>
+            <li>
+                <i class="ri-checkbox-circle-fill"></i> 
+                Cancel anytime
+            </li>
+            <li>
+                <i class="ri-checkbox-circle-fill"></i> 
+                30 day free trial
+            </li>
+        </ul>
+{{/if}}

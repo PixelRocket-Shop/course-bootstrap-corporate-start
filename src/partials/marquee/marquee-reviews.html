@@ -1,0 +1,15 @@
+{{# if (config reviews)}}
+
+    {{#each reviews.entries}}
+        <i class="ri-double-quotes-l"></i>
+        <p>{{ quote }}</p>
+        <picture>
+            <img src="{{ avatar }}" alt="{{ config.defaultImgAlt }}">
+        </picture>
+        <span>{{ name }}</span>
+        <picture>
+            <img src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+        </picture>
+    {{/each}}
+
+{{/if}}

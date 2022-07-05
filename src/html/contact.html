@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> navbar/navbar
+        configClassList=config.classes.navbar
+        classList="border-bottom" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <main class="mt-0 {{ config.classes.content }}">
+
+        <!-- Page Title-->
+        <h1>Contact us</h1>
+        <p>Select a category below to email the correct support team, or
+            alternatively, send us a general message using the form below.</p>
+        <!-- / Page Title-->
+
+        <!-- Page Content Goes Here -->
+
+            <!-- Support Categories-->
+
+                <!-- Single Category-->
+                <span>
+                    <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline opacity=".4" points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </span>
+                    <p>Knowledgebase</p>
+                    <span>Browse our resources or submit a ticket to our support team.</span>
+                    <a href="#">Visit help center &rarr;</a>
+                <!-- / Single Category-->
+
+                <!-- Single Category-->
+                <span>
+                    <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path opacity=".4" d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path opacity=".4" d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <p>Contact sales</p>
+                <span>Ask about a custom pricing plan, our business products, or request a demo.</span>
+                <a href="#">Contact sales &rarr;</a>
+                <!-- / Single Category-->
+                
+                <!-- Single Category-->
+                <span>
+                    <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path opacity=".4" d="M13 6h3a2 2 0 0 1 2 2v7"></path><line opacity=".4" x1="6" y1="9" x2="6" y2="21"></line></svg>
+                </span>
+                <p>Technical Support</p>
+                <span>Need help with our API, or assistance using our landing page design tool?</span>
+                <a href="#">Contact support &rarr;</a>
+                <!-- / Single Category-->
+
+            <!-- Support Categories-->
+
+            <!-- Contact Details & Form-->
+
+                <!-- Contact Form-->
+                    <p>Get in touch</p>
+                    <h2>Send us a message</h2>
+                    
+                    <form>
+                        
+                        <!-- Name-->
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="John Doe">
+                        <!-- / Name-->
+
+                        <!-- Email-->
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="john@doe.com">
+                        <!-- / Email-->
+
+                        <!-- Company Name-->
+                        <label>Company</label>
+                        <input type="text" name="company" placeholder="ACME Limited">
+                        <!-- / Company Name-->
+
+                        <!-- Telephone-->
+                        <label>Telephone</label>
+                        <input type="text" name="telephone"
+                            placeholder="+44 (0)208 445 678">
+                        <!-- / Telephone-->
+
+                        <!-- Project Information-->
+                        <label>Message</label>
+                        <textarea name="about" cols="30" rows="10"></textarea>
+                        <!-- / Project Information-->
+
+                        <!-- Submit btn-->
+                        <button type="submit">Send Message</button>
+                        <!-- / Submit Btn-->
+                    </form>
+                <!-- / Contact Form-->
+
+                <!-- Contact Details-->
+                <p>Find us online</p>
+                <ul>
+                    <li><i class="ri-github-line"></i> <a class="text-muted" href="#">Github</a></li>
+                    <li><i class="ri-facebook-line"></i> <a class="text-muted" href="#">Facebook</a></li>
+                    <li><i class="ri-twitter-line"></i> <a class="text-muted" href="#">Twitter</a></li>
+                    <li><i class="ri-codepen-line"></i> <a class="text-muted" href="#">Codepen</a></li>
+                </ul>
+                <p>Our head office</p>
+                <p>33 Sandhurst Road, Canterbury Avenue, Central London, SM3 4RT, United Kingdom</p>
+                <!-- / Contact Details-->
+
+            <!-- Contact Details & Form-->
+
+        <!-- /Page Content -->
+    </main>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer)
+            configClassList=config.classes.footer
+            classList=""
+        }}
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

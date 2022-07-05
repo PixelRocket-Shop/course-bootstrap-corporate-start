@@ -1,0 +1,17 @@
+{{# if (config integrations)}}
+        <p>Integrations</p>
+        <h3>Integrate with your favourite tools</h3>
+        <p>Sync, share and download your work on the systems below.</p>
+
+        {{# each integrations.entries}}
+            <!-- Integration-->
+                <picture>
+                    <img src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                </picture>
+                <p>{{ name }}</p>
+                <p>{{ description }}</p>
+            <!-- /Integration-->
+        {{/each}}
+        
+        <a href="#">More about our integrations</a>
+{{/if}}
